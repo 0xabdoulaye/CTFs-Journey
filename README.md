@@ -21,7 +21,7 @@ Happy hacking!.
 | Machines | Difficulty |                                                Tags                  | Platform                            | Status | 
 |:-------------:|:----------:|:--------------------------------------------------------------------------------------------------:|:---------:|:---------:|
 |               |            |                                                                                                    |           |                               | 
-| VulnVersity        |    Easy    |                 ssh, DirEnum, Systemctl                                                            | Tryhackme |    Completed     |
+| VulnVersity        |    Easy    |                 ssh, DirEnum, Systemctl(PrivEsc)                                                            | Tryhackme |    Completed     |
 | EasyCTF        |    Easy    |                DirEnum, CMS Made Simple, ssh                                                           | Tryhackme |    Completed     |
 |  PC       |    Easy    |                   grpcui, go, 50051                                                          | HacktheBox |    Completed     |
 | Metasploitable 2         |    Easy    |    FTP, SSH, MySQL, revshells                                                                    | Rootme    |    In Progress     |
@@ -29,4 +29,4 @@ Happy hacking!.
 |Lian Yu         |    Easy    |     DirEnum, Steg, FTP, polkit(pkexec)                                                                    | Tryhackme  |    Completed     |
 | Basic Pentesting 1        |    Easy    |                 cracking, DirEnum,                                                            | Tryhackme |    Completed     |
 | Agent Sudo        |    Easy    |                 ssh, DirEnum, cracking                                                            | Tryhackme |    Completed     |
-| Brooklyn Nine Nine        |    Easy    |           Steg, FTP, Sudo(PrivEsc)                                                                 | Tryhackme |    Completed     |
+| Brooklyn Nine Nine        |    Easy    |           Steg, FTP, nano(PrivEsc)                                                                 | Tryhackme |    Completed     |
