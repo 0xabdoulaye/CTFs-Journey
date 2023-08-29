@@ -27,6 +27,7 @@ Happy hacking!.
 | Metasploitable 2         |    Easy    |    FTP, SSH, MySQL, revshells                                                                    | Rootme    |    In Progress     |
 |Kenobi         |    Easy    |  SMB, enum4linux, NFS, SSH                                                                       | Tryhackme  |    Completed     |
 |Lian Yu         |    Easy    |     DirEnum, Steg, FTP, polkit(pkexec)                                                                    | Tryhackme  |    Completed     |
-| Basic Pentesting 1        |    Easy    |                 cracking, DirEnum,                                                            | Tryhackme |    Completed     |
+| Basic Pentesting 1        |    Easy    |                 Cracking, DirEnum,                                                            | Tryhackme |    Completed     |
 | Agent Sudo        |    Easy    |                 ssh, DirEnum, cracking                                                            | Tryhackme |    Completed     |
 | Brooklyn Nine Nine        |    Easy    |           Steg, FTP, nano(PrivEsc)                                                                 | Tryhackme |    Completed     |
+| BullDog        |    Easy    |           DirEnum, Cracking, RCE(id_rsa.pub), Cronjob(PrivEsc)                                                                 | RootMe |    Completed     |
