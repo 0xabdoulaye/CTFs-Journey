@@ -1,0 +1,29 @@
+target : 10.10.11.231
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2023-09-10 05:32:48Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: rebound.htb0., Site: Default-First-Site-Name)
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  winrm?
+49666/tcp open  unknown
+49669/tcp open  unknown
+49685/tcp open  unknown
+49780/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port47001-TCP:V=7.93%I=7%D=9/9%Time=64FCF28C%P=x86_64-pc-linux-gnu%r(Ja
+SF:vaRMI,1F9,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/
+SF:html;\x20charset=us-ascii\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nDate:
+SF:\x20Sun,\x2010\x20Sep\x202023\x2005:32:39\x20GMT\r\nConnection:\x20clos
+SF:e\r\nContent-Length:\x20326\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//
+SF:W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/html4/strict\.d
+SF:td\">\r\n<HTML><HEAD><TITLE>Bad\x20Request</TITLE>\r\n<META\x20HTTP-EQU
+SF:IV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-ascii\"></HEA
+SF:D>\r\n<BODY><h2>Bad\x20Request\x20-\x20Invalid\x20Verb</h2>\r\n<hr><p>H
+SF:TTP\x20Error\x20400\.\x20The\x20request\x20verb\x20is\x20invalid\.</p>\
+SF:r\n</BODY></HTML>\r\n");
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
