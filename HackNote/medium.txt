@@ -1,0 +1,19 @@
+└─# nmap -sV -A -Pn -p- --min-rate 5000  10.150.150.56     
+Not shown: 46545 closed tcp ports (reset), 18985 filtered tcp ports (no-response)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 f2381f67bf488d17a25c6607eaa21ca9 (RSA)
+|_  256 476a80eecb0e3b6c80db1b6328dc9131 (ED25519)
+25/tcp  open  smtp    Postfix smtpd
+|_smtp-commands: chocker.localhost, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING
+80/tcp  open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+110/tcp open  pop3    Dovecot pop3d
+143/tcp open  imap    Dovecot imapd (Ubuntu)
+Aggressive OS guesses: Linux 4.15 - 5.6 (95%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.3 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.4 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host:  chocker.localhost; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+directory search and found nothing
