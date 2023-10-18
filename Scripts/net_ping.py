@@ -17,7 +17,7 @@ def main():
     # Replace the "0" in the IP address with your appropriate subnet.
     threads = []
     for i in range(1, 256):
-        ip = f"192.168.14.{i}"
+        ip = f"10.10.11.{i}"
         thread = threading.Thread(target=ping_ip, args=(ip,))
         threads.append(thread)
         thread.start()

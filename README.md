@@ -21,13 +21,16 @@ Happy hacking!.
 | Machines | Difficulty |                                                Tags                  | Platform                            | Status | 
 |:-------------:|:----------:|:--------------------------------------------------------------------------------------------------:|:---------:|:---------:|
 |               |            |                                                                                                    |           |                               | 
-| VulnVersity        |    Easy    |                 ssh, DirEnum, Systemctl(PrivEsc)                                                            | Tryhackme |    Completed     |
-| EasyCTF        |    Easy    |                DirEnum, CMS Made Simple, ssh                                                           | Tryhackme |    Completed     |
+| [VulnVersity](./CTFs_Machines/VulnVersity.md)        |    Easy    |                 ssh, DirEnum, Systemctl(PrivEsc)                                                            | Tryhackme |    Completed     |
+| [EasyCTF](./CTFs_Machines/easyctf.md)        |    Easy    |                DirEnum, CMS Made Simple, ssh                                                           | Tryhackme |    Completed     |
 |  PC       |    Easy    |                   grpcui, go, 50051                                                          | HacktheBox |    Completed     |
 | Metasploitable 2         |    Easy    |    FTP, SSH, MySQL, revshells                                                                    | Rootme    |    In Progress     |
 |Kenobi         |    Easy    |  SMB, enum4linux, NFS, SSH                                                                       | Tryhackme  |    Completed     |
 |Lian Yu         |    Easy    |     DirEnum, Steg, FTP, polkit(pkexec)                                                                    | Tryhackme  |    Completed     |
 | Basic Pentesting 1        |    Easy    |                 Cracking, DirEnum,                                                            | Tryhackme |    Completed     |
 | Agent Sudo        |    Easy    |                 ssh, DirEnum, cracking                                                            | Tryhackme |    Completed     |
-| Brooklyn Nine Nine        |    Easy    |           Steg, FTP, nano(PrivEsc)                                                                 | Tryhackme |    Completed     |
+| [Brooklyn Nine Nine](./CTFs_Machines/brooklyn.md)        |    Easy    |           Steg, FTP, nano(PrivEsc)                                                                 | Tryhackme |    Completed     |
 | BullDog        |    Easy    |           DirEnum, Cracking, RCE(id_rsa.pub), Cronjob(PrivEsc)                                                                 | RootMe |    Completed     |
+| [Dancing](https://blackcybersec.xyz/posts/Dancing-HacktheBox/)        |    Easy    |           SMB, Anonymous, Share                                                               | HacktheBox |    Completed     |
+| [Sau](./CTFs_Machines/sau.md)        |    Easy    |           SSRF, CVE-2023-27163, Systemctl(PrivEsc)                                                               | HacktheBox |    Completed     |
+| [KeeperHTB](./CTFs_Machines/keeperHTB.md)        |    Easy    |           CVE-2023-32784, keePass, id_rsa(PrivEsc)                                                               | HacktheBox |    Completed     |
