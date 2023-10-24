@@ -26,7 +26,7 @@ Happy hacking!.
 |  PC       |    Easy    |                   grpcui, go, 50051                                                          | HacktheBox |    Completed     |
 | Metasploitable 2         |    Easy    |    FTP, SSH, MySQL, revshells                                                                    | Rootme    |    In Progress     |
 |Kenobi         |    Easy    |  SMB, enum4linux, NFS, SSH                                                                       | Tryhackme  |    Completed     |
-|Lian Yu         |    Easy    |     DirEnum, Steg, FTP, polkit(pkexec)                                                                    | Tryhackme  |    Completed     |
+|[Lian Yu](./CTFs_Machines/LianYu.md)         |    Easy    |     DirEnum, Steg, FTP, polkit(pkexec)                                                                    | Tryhackme  |    Completed     |
 | Basic Pentesting 1        |    Easy    |                 Cracking, DirEnum,                                                            | Tryhackme |    Completed     |
 | Agent Sudo        |    Easy    |                 ssh, DirEnum, cracking                                                            | Tryhackme |    Completed     |
 | [Brooklyn Nine Nine](./CTFs_Machines/brooklyn.md)        |    Easy    |           Steg, FTP, nano(PrivEsc)                                                                 | Tryhackme |    Completed     |
@@ -34,3 +34,5 @@ Happy hacking!.
 | [Dancing](https://blackcybersec.xyz/posts/Dancing-HacktheBox/)        |    Easy    |           SMB, Anonymous, Share                                                               | HacktheBox |    Completed     |
 | [Sau](./CTFs_Machines/sau.md)        |    Easy    |           SSRF, CVE-2023-27163, Systemctl(PrivEsc)                                                               | HacktheBox |    Completed     |
 | [KeeperHTB](./CTFs_Machines/keeperHTB.md)        |    Easy    |           CVE-2023-32784, keePass, id_rsa(PrivEsc)                                                               | HacktheBox |    Completed     |
+| [Blog](./CTFs_Machines/blog.md)        |    Medium    |           Wordpress, CVE-2019-8943, Pkexec(PrivEsc), /usr/sbin/checker                                                              | TryHackMe |    Completed     |
+| [StuntMan](./CTFs_Machines/Stuntman.md)        |    Easy    |           Ssh, Hydra, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
