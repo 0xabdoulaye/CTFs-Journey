@@ -44,6 +44,5 @@ Happy hacking!.
 ## Windows Machines
 | Machines | Difficulty |                                                Tags                  | Platform                            | Status | 
 |:-------------:|:----------:|:--------------------------------------------------------------------------------------------------:|:---------:|:---------:|
-|               |            |                 
-
+|               |            |                                                                                                    |           |                               |
 | [Dancing](https://blackcybersec.xyz/posts/Dancing-HacktheBox/)        |    Easy    |           SMB, Anonymous, Share                                                               | HacktheBox |    Completed     |
