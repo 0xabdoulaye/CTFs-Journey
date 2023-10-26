@@ -36,6 +36,7 @@ Happy hacking!.
 | [KeeperHTB](./CTFs_Machines/keeperHTB.md)        |    Easy    |           CVE-2023-32784, keePass, id_rsa(PrivEsc)                                                               | HacktheBox |    Completed     |
 | [Blog](./CTFs_Machines/blog.md)        |    Medium    |           Wordpress, CVE-2019-8943, Pkexec(PrivEsc), /usr/sbin/checker                                                              | TryHackMe |    Completed     |
 | [StuntMan](./CTFs_Machines/Stuntman.md)        |    Easy    |           Ssh, Hydra, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
+| [Vega](./CTFs_Machines/vega.md)        |    Medium    |           Ssh, Guessing, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
 
 
 
