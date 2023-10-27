@@ -37,7 +37,7 @@ Happy hacking!.
 | [Blog](./CTFs_Machines/blog.md)        |    Medium    |           Wordpress, CVE-2019-8943, Pkexec(PrivEsc), /usr/sbin/checker                                                              | TryHackMe |    Completed     |
 | [StuntMan](./CTFs_Machines/Stuntman.md)        |    Easy    |           Ssh, Hydra, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
 | [Vega](./CTFs_Machines/vega.md)        |    Medium    |           Ssh, Guessing, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
-| [Topology](./CTFs_Machines/Topology.md)        |    Easy    |                                                                         | HacktheBox |   Completed    |
+| [Topology](./CTFs_Machines/Topology.md)        |    Easy    |           Latex Injection, Crack Passwd, Gnuplot(PrivEsc)                                                              | HacktheBox |   Completed    |
 
 
 
