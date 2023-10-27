@@ -38,6 +38,7 @@ Happy hacking!.
 | [StuntMan](./CTFs_Machines/Stuntman.md)        |    Easy    |           Ssh, Hydra, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
 | [Vega](./CTFs_Machines/vega.md)        |    Medium    |           Ssh, Guessing, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
 | [Topology](./CTFs_Machines/Topology.md)        |    Easy    |           Latex Injection, Crack Passwd, Gnuplot(PrivEsc)                                                              | HacktheBox |   Completed    |
+| [HiJack](./CTFs_Machines/)        |    Easy    |                                                                         | TryHackMe |   Comming Soon...    |
 
 
 
