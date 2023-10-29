@@ -39,7 +39,7 @@ Happy hacking!.
 | [Vega](./CTFs_Machines/vega.md)        |    Medium    |           Ssh, Guessing, Sudo(PrivEsc)                                                              | PwntillDawn |    Completed     |
 | [Topology](./CTFs_Machines/Topology.md)        |    Easy    |           Latex Injection, Crack Passwd, Gnuplot(PrivEsc)                                                              | HacktheBox |   Completed    |
 | [HiJack](./CTFs_Machines/)        |    Easy    |                                                                         | TryHackMe |   Comming Soon...    |
-
+| [Analytics](./CTFs_Machines/Analytics.md)        |    Easy    |CVE-2023-38646, CVE-2021-3493, OverlayFS(PrivEsc)                                                                         | HacktheBox |   Completed   |
 
 
 
