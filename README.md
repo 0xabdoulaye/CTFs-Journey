@@ -40,7 +40,7 @@ Happy hacking!.
 | [HiJack](./CTFs_Machines/)        |    Easy    |                                                                         | TryHackMe |   Comming Soon...    |
 | [Analytics](./CTFs_Machines/Analytics.md)        |    Easy    |CVE-2023-38646, CVE-2021-3493, OverlayFS(PrivEsc)                                                                         | HacktheBox |   Completed   |
 | [Canyon](./CTFs_Machines/Canyon.md)        |    Easy    |SMTP, RCE, sudo(PrivEsc)                                                                         | PwntillDawn |   Completed   |
-
+| [Oopsie](./CTFs_Machines/oopsie.md)        |    Easy    |IDOR, RCE, pkexec,bugtracker,PATH(PrivEsc)                                                                         | PwntillDawn |   Completed   |
 
 
 ## Windows Machines
