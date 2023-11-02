@@ -41,6 +41,9 @@ Happy hacking!.
 | [Analytics](./CTFs_Machines/Analytics.md)        |    Easy    |CVE-2023-38646, CVE-2021-3493, OverlayFS(PrivEsc)                                                                         | HacktheBox |   Completed   |
 | [Canyon](./CTFs_Machines/Canyon.md)        |    Easy    |SMTP, RCE, sudo(PrivEsc)                                                                         | PwntillDawn |   Completed   |
 | [Oopsie](./CTFs_Machines/oopsie.md)        |    Easy    |IDOR, RCE, pkexec,bugtracker,PATH(PrivEsc)                                                                         | HacktheBox |   Completed   |
+| [Apache](./CTFs_Machines/apache.md)        |    Easy    |CVE-2021-41773, apache 2.4.49, cpio(PrivEsc)                                                                         | EchoCTF |   Completed   |
+| [Grafana](./CTFs_Machines/grafana.md)        |    Advanced    |LFI, default Creds, ansible-playbook(PrivEsc)                                                                         | EchoCTF |   Completed   |
+
 
 
 ## Windows Machines
