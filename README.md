@@ -43,7 +43,7 @@ Happy hacking!.
 | [Oopsie](./CTFs_Machines/oopsie.md)        |    Easy    |IDOR, RCE, pkexec,bugtracker,PATH(PrivEsc)                                                                         | HacktheBox |   Completed   |
 | [Apache](./CTFs_Machines/apache.md)        |    Easy    |CVE-2021-41773, apache 2.4.49, cpio(PrivEsc)                                                                         | EchoCTF |   Completed   |
 | [Grafana](./CTFs_Machines/grafana.md)        |    Advanced    |LFI, default Creds, ansible-playbook(PrivEsc)                                                                         | EchoCTF |   Completed   |
-
+| [DC-1](./CTFs_Machines/Dc1.md)        |    Easy    |Drupal, SQLi, find(PrivEsc)                                                                         | Proving Grounds |   Completed   |
 
 
 ## Windows Machines
