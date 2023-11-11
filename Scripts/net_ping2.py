@@ -15,7 +15,7 @@ def is_reachable(ip, results_queue):
 
 def main():
     # Replace the "10.10.12.0" with your appropriate subnet.
-    subnet = ipaddress.IPv4Network("10.10.11.0/24")
+    subnet = ipaddress.IPv4Network("10.10.10.0/24")
 
     results_queue = queue.Queue()
     threads = []

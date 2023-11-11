@@ -44,7 +44,7 @@ Happy hacking!.
 | [Apache](./CTFs_Machines/apache.md)        |    Easy    |CVE-2021-41773, apache 2.4.49, cpio(PrivEsc)                                                                         | EchoCTF |   Completed   |
 | [Grafana](./CTFs_Machines/grafana.md)        |    Advanced    |LFI, default Creds, ansible-playbook(PrivEsc)                                                                         | EchoCTF |   Completed   |
 | [DC-1](./CTFs_Machines/Dc1.md)        |    Easy    |Drupal, SQLi, find(PrivEsc)                                                                         | Proving Grounds |   Completed   |
-
+| [Dasherr](./CTFs_Machines/Dasherr.md)        |    Medium    |Instance, Burp, gcc(PrivEsc)                                                                         | EchoCTF |   Completed   |
 
 ## Windows Machines
 | Machines | Difficulty |                                                Tags                  | Platform                            | Status | 
@@ -52,3 +52,4 @@ Happy hacking!.
 |               |            |                                                                                                    |           |                               |
 | [Dancing](https://blackcybersec.xyz/posts/Dancing-HacktheBox/)        |    Easy    |           SMB, Anonymous, Share                                                               | HacktheBox |    Completed     |
 | [Mr Blue](https://blackcybersec.xyz/posts/Windows-hacking/)        |    Easy    |           EternalBlue, MS17-010, CVE-2017-0144                                                               | PwntillDawn |    Completed     |
+| [Blue](./CTFs_Machines/blue.md)        |    Easy    |           EternalBlue, MS17-010, CVE-2017-0144                                                               | HacktheBox |    Completed     |
