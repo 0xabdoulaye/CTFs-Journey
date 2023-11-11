@@ -53,3 +53,4 @@ Happy hacking!.
 | [Dancing](https://blackcybersec.xyz/posts/Dancing-HacktheBox/)        |    Easy    |           SMB, Anonymous, Share                                                               | HacktheBox |    Completed     |
 | [Mr Blue](https://blackcybersec.xyz/posts/Windows-hacking/)        |    Easy    |           EternalBlue, MS17-010, CVE-2017-0144                                                               | PwntillDawn |    Completed     |
 | [Blue](./CTFs_Machines/blue.md)        |    Easy    |           EternalBlue, MS17-010, CVE-2017-0144                                                               | HacktheBox |    Completed     |
+| [Responder](./CTFs_Machines/responder.md)        |    Easy    |           NTLM, LFI,RFI                                                               | HacktheBox |    Completed     |
