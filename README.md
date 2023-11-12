@@ -45,6 +45,11 @@ Happy hacking!.
 | [Grafana](./CTFs_Machines/grafana.md)        |    Advanced    |LFI, default Creds, ansible-playbook(PrivEsc)                                                                         | EchoCTF |   Completed   |
 | [DC-1](./CTFs_Machines/Dc1.md)        |    Easy    |Drupal, SQLi, find(PrivEsc)                                                                         | Proving Grounds |   Completed   |
 | [Dasherr](./CTFs_Machines/Dasherr.md)        |    Medium    |Instance, Burp, gcc(PrivEsc)                                                                         | EchoCTF |   Completed   |
+| [DogCat](./CTFs_Machines/dogcat.md)        |    Medium    |LFI2RCE, Escape Container, env(PrivEsc)                                                                         | TryHackMe |   Completed   |
+
+
+
+
 
 ## Windows Machines
 | Machines | Difficulty |                                                Tags                  | Platform                            | Status | 
