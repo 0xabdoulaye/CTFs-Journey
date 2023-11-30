@@ -46,6 +46,10 @@ Happy hacking!.
 | [DC-1](./CTFs_Machines/Dc1.md)        |    Easy    |Drupal, SQLi, find(PrivEsc)                                                                         | Proving Grounds |   Completed   |
 | [Dasherr](./CTFs_Machines/Dasherr.md)        |    Medium    |Instance, Burp, gcc(PrivEsc)                                                                         | EchoCTF |   Completed   |
 | [DogCat](./CTFs_Machines/dogcat.md)        |    Medium    |LFI2RCE, Escape Container, env(PrivEsc)                                                                         | TryHackMe |   Completed   |
+| [Sumo](./CTFs_Machines/sumo.md)        |    Easy    |Shellsock, RCE, DirtyCow(PrivEsc)                                                                         | Proving Grounds |   Completed   |
+| [Shellsock](./CTFs_Machines/Shellshock.md)        |    Easy    |Shellsock, RCE                                                                         | PentesterLab |   Completed   |
+
+
 
 
 
