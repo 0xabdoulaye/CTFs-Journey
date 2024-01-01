@@ -1,4 +1,4 @@
-# Description 
+# Description
 Welcome to my personal Capture The Flags (CTFs) repository! This repository is created to track my progress, achievements, and detailed notes regarding cybersecurity challenges, especially on popular platforms like TryHackMe, Hack The Box and Rootme.
 
 ## Contents
@@ -48,7 +48,7 @@ Happy hacking!.
 | [DogCat](./CTFs_Machines/dogcat.md)        |    Medium    |LFI2RCE, Escape Container, env(PrivEsc)                                                                         | TryHackMe |   Completed   |
 | [Sumo](./CTFs_Machines/sumo.md)        |    Easy    |Shellsock, RCE, DirtyCow(PrivEsc)                                                                         | Proving Grounds |   Completed   |
 | [Shellsock](./CTFs_Machines/Shellshock.md)        |    Easy    |Shellsock, RCE                                                                         | PentesterLab |   Completed   |
-
+| [FunboxEasy](./CTFs_Machines/funbox.md)        |    Easy    |SQLi, RCE, GameOverlayFs(PrivEsc)                                                                         | Proving Grounds |   Completed   |
 
 
 
