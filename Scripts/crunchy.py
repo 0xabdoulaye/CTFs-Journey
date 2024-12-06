@@ -47,7 +47,7 @@ def futuristic_animation():
 
 print_banner('Crunchyroll')
 
-ID = '-4592722421'
+ID = ''
 
 file_name = 'accounts.txt'
 print(f"{GREEN}{'━'*67}{RESET}")
@@ -55,7 +55,7 @@ file = open(file_name).read().splitlines()
 
 successful_attempts = []
 
-telegram_bot_token = '7331594564:AAEXXu9NqWM2M8wQ1KMzVdl5V61yJCucbW0'
+telegram_bot_token = ''
 telegram_chat_id = ID
 
 for xx in file:
